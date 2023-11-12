@@ -1,26 +1,22 @@
-// Import necessary libraries
-import $ from 'jquery';  // Import jQuery library
-import _ from 'lodash';  // Import lodash library
+import $ from 'jquery';
+import _ from 'lodash';
 
-// Initialize a counter variable to keep track of button clicks
-let count = 0;
+$('body').append('<p>Holberton Dashboard</p>');
+$('body').append('<p>Dashboard data for the students</p>');
+$('body').append('<button>Click here to get started</button>');
+$('body').append('<p id="count"></p>');
+$('body').append('<p>Copyright - Holberton School</p>');
 
-// Function to update the counter and display the count on the HTML page
+// Initialize a variable 'count' with an initial value of 0.
+let conunt = 0;
+
+// Define a function 'updateCounter' to increment the 'count' variable
 function updateCounter() {
-  count += 1;  // Increment the counter
-  $('#count').text(`${count} clicks on the button`);  // Update the count in the HTML
-}
+  count++;
+  // updates the text content of the paragraph with the id 'count'.
+  $("#count").html(`${count} clicks on the button`);
+};
 
-// Execute the following code when the document is ready
-$(function() {
-  // Append different HTML elements to the body using jQuery
-  $('body').append('<p>Holberton Dashboard</p>');  // Paragraph element
-  $('body').append('<p>Dashboard data for the students</p>');  // Paragraph element
-  $('body').append('<button id="startBtn">Click here to get started</button>');  // Button element
-  $('body').append('<p id="count"></p>');  // Paragraph element with id 'count'
-  $('body').append('<p>Copyright - Holberton School</p>');  // Another paragraph element
-
-  // Bind the debounce function from lodash to the click event on the button
-  $('#startBtn').click(_.debounce(updateCounter, 1000));
-  // The above line ensures that the updateCounter function is not called more than once per second
-});
+// Attach a debounced click event handler to the button element using jQuery.
+// The 'updateCounter' function is invoked with a debounce of 500 milliseconds.
+$('button').on('click', _.debounce(updateCounter, 500));
