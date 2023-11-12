@@ -8,7 +8,6 @@ $(function() {
     $('body').append("<p id='count'></p>");
     $('body').append('<p>Copyright - Holberton School</p>');
 
-    // Define a click counter function.
     function updateCounter() {
         let count = 0;
         return function() {
@@ -17,6 +16,5 @@ $(function() {
         }
     }
 
-    // Attach a debounced click event handler to the button, invoking the click counter.
     $('button').on('click', _.debounce( updateCounter(), 500));
 });
