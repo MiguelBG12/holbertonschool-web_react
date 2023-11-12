@@ -8,7 +8,7 @@ $('body').append('<p id="count"></p>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
 // Initialize a variable 'count' with an initial value of 0.
-let conunt = 0;
+let count = 0;
 
 // Define a function 'updateCounter' to increment the 'count' variable
 function updateCounter() {
