@@ -18,34 +18,37 @@ interface PrintTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Example of use with 'Teacher' interface
-const teacher3: Teacher = {
-  firstName: 'Ruben',
-  fullTimeEmployee: false,
-  lastName: 'Cardenas',
-  location: 'Lima',
-  contract: false,
-};
+// Definition of the 'Student' interface
+interface Student {
+  firstName: string;
+  lastName: string;
+}
 
-console.log(teacher3);
+// Definition of the 'StudentClass' interface
+interface StudentClassInterface {
+  new (firstName: string, lastName: string): StudentClass;
+}
 
-// Example of use with 'Directors' interface
-const director1: Directors = {
-  firstName: 'Gabriel',
-  lastName: 'Bedoya',
-  location: 'Lima',
-  fullTimeEmployee: true,
-  numberOfReports: 17,
-};
+// Definition of the 'StudentClass' class
+class StudentClass implements Student {
+  firstName: string;
+  lastName: string;
 
-console.log(director1);
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
-// Implementation of the 'printTeacher' function
-const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
-  const firstLetter = firstName.charAt(0).toUpperCase();
-  return `${firstLetter}. ${lastName}`;
-};
+  workOnHomework(): string {
+    return 'Currently working';
+  }
 
-// Example of use with the 'printTeacher' function
-const printedTeacher = printTeacher('John', 'Doe');
-console.log(printedTeacher);
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+// Example of use with 'StudentClass'
+const student1: StudentClass = new StudentClass('Miguel', 'Bautista');
+console.log(student1.workOnHomework()); // Output: Currently working
+console.log(student1.displayName()); // Output: Alice
