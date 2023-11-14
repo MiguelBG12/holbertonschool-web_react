@@ -8,7 +8,12 @@ interface Teacher {
     [key: string]: string | boolean | number | undefined; // To allow any attribute
   }
   
-  // Example of use
+  // Definition of the 'Directors' interface that extends 'Teacher'
+  interface Directors extends Teacher {
+    numberOfReports: number;
+  }
+  
+  // Example of use with 'Teacher' interface
   const teacher3: Teacher = {
     firstName: 'Ruben',
     fullTimeEmployee: false,
@@ -18,4 +23,16 @@ interface Teacher {
   };
   
   console.log(teacher3);
+  
+  // Example of use with 'Directors' interface
+  const director1: Directors = {
+    firstName: 'Gabriel',
+    lastName: 'Bedoya',
+    location: 'Lima',
+    fullTimeEmployee: true,
+    numberOfReports: 17,
+  };
+  
+  console.log(director1);
+  
   
