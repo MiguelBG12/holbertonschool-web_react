@@ -29,8 +29,7 @@ function App() {
         <button>OK</button>
       </div>
       <footer className="App-footer">
-        <p>{getFooterCopy(isIndex)}</p>
-        <p>Copyright {getFullYear()} - Holberton School</p>
+        <p>Copyright { getFullYear()} - {getFooterCopy('isIndex')}</p>
       </footer>
     </div>
   );
