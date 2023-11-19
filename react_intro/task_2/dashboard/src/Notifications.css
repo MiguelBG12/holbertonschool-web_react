@@ -1,0 +1,14 @@
+.Notifications {
+    border: 1px solid #d32e3b;
+    padding: 10px;
+}
+
+/* Style for elements with data-priority="default" */
+.Notifications>ul li[data-priority='default'] {
+    color: #00f; /* Change the color to blue for default notifications */
+}
+  
+/* Style for elements with data-priority="urgent" */
+.Notifications>ul li[data-priority='urgent'] {
+    color: #f00; /* Change the color to red for urgent notifications */
+}
