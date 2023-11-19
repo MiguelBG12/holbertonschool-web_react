@@ -1,6 +1,7 @@
 // Function to get the current year
 export function getFullYear() {
-    return new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
+    return currentYear.toString(); // Convert to string explicitly
 }
   
 // Function to get the footer text based on isIndex
