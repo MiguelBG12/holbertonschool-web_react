@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/%3Cholbertonschool-web_react%3E/static/css/main.b7634381.css",
-    "main.js": "/%3Cholbertonschool-web_react%3E/static/js/main.0f0f67e7.js",
-    "static/js/787.1cd31a9e.chunk.js": "/%3Cholbertonschool-web_react%3E/static/js/787.1cd31a9e.chunk.js",
-    "static/media/Holberton_Logo.jpg": "/%3Cholbertonschool-web_react%3E/static/media/Holberton_Logo.24bab5d633e36ca8d17e.jpg",
-    "static/media/close-icon.png": "/%3Cholbertonschool-web_react%3E/static/media/close-icon.7dee5b83e6411e5202f9.png",
-    "index.html": "/%3Cholbertonschool-web_react%3E/index.html",
-    "main.b7634381.css.map": "/%3Cholbertonschool-web_react%3E/static/css/main.b7634381.css.map",
-    "main.0f0f67e7.js.map": "/%3Cholbertonschool-web_react%3E/static/js/main.0f0f67e7.js.map",
-    "787.1cd31a9e.chunk.js.map": "/%3Cholbertonschool-web_react%3E/static/js/787.1cd31a9e.chunk.js.map"
+    "main.css": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/css/main.b7634381.css",
+    "main.js": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/js/main.e8d0ef9e.js",
+    "static/js/787.1cd31a9e.chunk.js": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/js/787.1cd31a9e.chunk.js",
+    "static/media/Holberton_Logo.jpg": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/media/Holberton_Logo.24bab5d633e36ca8d17e.jpg",
+    "static/media/close-icon.png": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/media/close-icon.7dee5b83e6411e5202f9.png",
+    "index.html": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/index.html",
+    "main.b7634381.css.map": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/css/main.b7634381.css.map",
+    "main.e8d0ef9e.js.map": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/js/main.e8d0ef9e.js.map",
+    "787.1cd31a9e.chunk.js.map": "//github.com/MiguelBG12/holbertonschool-web_react/tree/main/react_intro/task_4/dashboard%3E/static/js/787.1cd31a9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7634381.css",
-    "static/js/main.0f0f67e7.js"
+    "static/js/main.e8d0ef9e.js"
   ]
 }
