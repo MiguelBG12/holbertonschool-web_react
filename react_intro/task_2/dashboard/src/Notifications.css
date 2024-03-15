@@ -12,3 +12,8 @@ li[data-priority="default"] {
 li[data-priority="urgent"] {
 	color: red;
 }
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+}
