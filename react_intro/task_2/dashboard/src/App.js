@@ -1,6 +1,6 @@
 import './App.css';
 import Notifications from './Notifications';
-import logo from './holberton_logo.jpg';
+import logo from './holberton-logo.jpg';
 import { getFooterCopy, getFullYear } from './utils';
 
 function App() {
